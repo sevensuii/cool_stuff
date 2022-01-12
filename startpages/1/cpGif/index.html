@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="https://kit.fontawesome.com/2538c8c34c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="myCont">
+        <img id="leftPanel" src="img/cpCity.webp" alt="CP city">
+        <div id="rightPanel">
+            <div id="greeter"></div>
+            <div id="weatherInfo">
+                <img class="Icon" id="Icon" src="icons/cloud-sun.svg"></img>
+                <div class="temperature" id="temperature"></div>
+            </div>
+            <form id="searchbar" action="https://www.google.com/search?q=" method="get">
+                <i class="fab fa-google"></i>
+                <input id="searchbar-input" type="text" placeholder="Type to search..." name="q">
+                <button type="submit"><i class="fas fa-rocket"></i></button>
+            </form>
+        </div>
+    </div>
+    <script>helloMyFriend()</script>
+    <script>weather()</script>
+</body>
+</html>
