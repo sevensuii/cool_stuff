@@ -4,14 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://css.gg/css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://pagecdn.io/lib/easyfonts/digital-numbers.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title></title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/led-digital-7');
+    </style>
 </head>
-<body>
-    <div class="main-container">
+<body class="bg-[url('img/bg-1.jpg')] bg-ficover flex justify-center items-center w-full h-full">
+    <div class="main-container bg-red-300 inline-block w-[80%]">
 
+        <div class="search-bar flex justify-end w-4/6">
+            <i class="gg-google"></i>
+            <form action="https://www.google.com/search?q=" method="get">
+                <input type="text" name="search-this" id="search-this">
+                <button type="submit"><i class="gg-search"></i></button>
+            </form>
+        </div>
 
+        <div class="container-1 flex">
+            <div class="mv-img w-2/6"><img src="img/cpCity.webp" alt="cp-bg" srcset=""></div>
+            <div class="my-stuff w-4/6 flex flex-col justify-around">
+                <div class="f-1 flex justify-around">
+                    <div class="weather">
+                        <div class="clock">
+                            <div class="time font-digital-numbers text-5xl text-center" style="font-family: 'LED Digital 7';"></div>
+                            <div class="date text-center font-serif"></div>
+                        </div>
+                        <div class="flex mt-3">
+                            <img class="Icon w-14" id="Icon" src="icons/cloud-sun.svg"></img>
+                            <div class="temperature flex flex-col">
+                                <div id="temperature"></div>
+                                <div class="location">Arrecife</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn">
+                        <div class="cat-name">Learn</div>
+                        <div class="content">Udemy</div>
+                        <div class="content">Moodle Zon</div>
+                        <div class="content">Moodle Can</div>
+                        <div class="content">Clasroom</div>
+                    </div>
+                    <div class="dev">
+                        <div class="cat-name">Dev</div>
+                        <div class="content">OverAPI</div>
+                        <div class="content">MDN</div>
+                        <div class="content">CSS.GG</div>
+                        <div class="content">Github</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="f-2 flex justify-around">
+                    <div class="social">
+                        <div class="cat-name">Social</div>
+                        <div class="content">Reddit</div>
+                        <div class="content">Insta</div>
+                        <div class="content">Discord</div>
+                        <div class="content">Whatsapp</div>
+                        <div class="content">Telegram</div>
+                    </div>
+                    <div class="ent">
+                        <div class="cat-name">Ent</div>
+                        <div class="content">YouTube</div>
+                        <div class="content">Netflix</div>
+                        <div class="content">Disney+</div>
+                        <div class="content">PrimeVideo</div>
+                        <div class="content">PlayDede</div>
+                    </div>
+                    <div class="other">
+                        <div class="cat-name">Other</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
