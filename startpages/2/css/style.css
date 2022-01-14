@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    .boxes {
-        @apply .bg-blue-400;
+    .content {
+        @apply bg-blue-400;
     }
-}
