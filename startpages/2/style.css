@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.boxes {
+    @apply backdrop-blur-xl backdrop-brightness-75 w-1/4 p-4 text-center text-slate-300 rounded-xl flex flex-col justify-between h-52;
+}
+
+.content {
+    @apply hover:text-[#BE65BF];
+}
