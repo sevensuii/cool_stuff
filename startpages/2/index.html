@@ -4,81 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple but beatiful startpage and new tab page for your browser">
+    <meta name="title" content="Startpage 2">
+    <link rel="icon" href="img/icon.gif" type="gif"/>
     <link href='https://css.gg/css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="weather.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://pagecdn.io/lib/easyfonts/digital-numbers.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>a</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Hi Sevensuii</title>
     <style>
         @import url('http://fonts.cdnfonts.com/css/led-digital-7');
     </style>
 </head>
-<body class="bg-[url('img/bg-1.jpg')] bg-ficover flex justify-center items-center w-full h-full">
-    <div class="main-container bg-red-300 inline-block w-[80%]">
+<body class="bg-[url('img/bg-1.jpg')] bg-ficover flex justify-center items-center content-center w-full min-h-full">
+    <div class="main-container  block w-[80%] mt-[8%]">
 
-        <div class="search-bar flex justify-end w-full">
-            <form action="https://www.google.com/search?q=" class='flex w-full justify-between p-1 w-4/6 bg-white rounded-lg my-4' method="get">
-                <i class="gg-google"></i>
-                <input type="text" class='w-11/12 px-2' name="q" id="search-this" placeholder="Search on Google..." autofocus autocomplete="off">
-                <button type="submit"><i class="gg-search"></i></button>
-            </form>
+        <div class="search-bar flex justify-end">
+            <div class="w-2/6"></div>
+            <div class="w-4/6 px-7">
+                <form action="https://www.google.com/search?q=" class='flex justify-between p-1 w-full bg-slate-300 rounded-lg my-4 px-4' method="get">
+                    <i class="gg-google"></i>
+                    <input type="text" class='w-11/12 px-2 bg-slate-300 mx-2' name="q" id="search-this" placeholder="Search on Google..." autocomplete="off">
+                    <button type="submit"><i class="gg-search"></i></button>
+                </form>
+            </div>
         </div>
 
-        <div class="container-1 flex">
-            <div class="mv-img w-2/6"><img src="img/cpCity.webp" alt="cp-bg"></div>
-            <div class="my-stuff w-4/6 flex flex-col justify-around">
+        <div class="container-1 flex justify-around">
+            <div class="mv-img w-2/6"><img src="img/cpCity.webp" alt="cp-bg" class="rounded-xl"></div>
+            <div class="my-stuff w-4/6 flex flex-col justify-between">
                 <div class="f-1 flex justify-around">
-                    <div class="weather">
-                        <div class="clock">
+                    <div class="boxes justify-center">
+                        <div class="clock text-slate-300 mt-4">
                             <div class="time font-digital-numbers text-5xl text-center" style="font-family: 'LED Digital 7';"></div>
                             <div class="date text-center font-serif"></div>
                         </div>
-                        <div class="flex mt-3">
+                        <div class="flex mb-4">
                             <img class="Icon w-14" id="Icon" src="icons/cloud-sun.svg" alt="Weather icon"></img>
-                            <div class="temperature flex flex-col">
+                            <div class="temperature flex flex-col ml-3 text-slate-300">
                                 <div id="temperature" class="font-serif"></div>
-                                <div class="location font-serif">Arrecife</div>
+                                <div class="location font-serif content"><a href="https://www.google.com/maps/place/Arrecife,+Las+Palmas/@28.9712389,-13.5747732,14z/data=!3m1!4b1!4m5!3m4!1s0xc46276fc5b3ba57:0x93c5d5f6589a2ec4!8m2!3d28.9651694!4d-13.5550363" target="_blank">Arrecife</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="boxes">
-                        <div class="cat-name">Learn</div>
-                        <div class="content">Udemy</div>
-                        <div class="content">Moodle Zon</div>
-                        <div class="content">Moodle Can</div>
-                        <div class="content">Clasroom</div>
+                        <div class="content"><a href="https://www.udemy.com/">Udemy</a></div>
+                        <div class="content"><a href="http://cifpzonzamas.org/moodle/login/index.php">Moodle Zon</a></div>
+                        <div class="content"><a href="https://www3.gobiernodecanarias.org/medusa/eforma/campus/my/">Moodle Can</a></div>
+                        <div class="content"><a href="https://classroom.google.com/">Clasroom</a></div>
+                        <div class="content"><a href="https://www.mastermind.ac/">Mastermind</a></div>
                     </div>
                     <div class="boxes">
-                        <div class="cat-name">Dev</div>
-                        <div class="content">OverAPI</div>
-                        <div class="content">MDN</div>
-                        <div class="content">CSS.GG</div>
-                        <div class="content">Github</div>
-                        <div class="content"></div>
+                        <div class="content"><a href="https://overapi.com/">OverAPI</a></div>
+                        <div class="content"><a href="https://tailwindcss.com/">TailwindCSS</a></div>
+                        <div class="content"><a href="https://laravel.com/docs/8.x">Laravel 8</a></div>
+                        <div class="content"><a href="https://github.com/">Github</a></div>
+                        <div class="content"><a href="https://gitpod.io/">Gitpod</a></div>
                     </div>
                 </div>
                 <div class="f-2 flex justify-around">
                     <div class="boxes">
-                        <div class="cat-name">Social</div>
-                        <div class="content">Reddit</div>
-                        <div class="content">Insta</div>
-                        <div class="content">Discord</div>
-                        <div class="content">Whatsapp</div>
-                        <div class="content">Telegram</div>
+                        <div class="content"><a href="https://www.reddit.com/">Reddit</a></div>
+                        <div class="content"><a href="https://www.instagram.com/">Insta</a></div>
+                        <div class="content"><a href="https://onlyfans.com/">Discord</a></div>
+                        <div class="content"><a href="https://web.whatsapp.com/">Whatsapp</a></div>
+                        <div class="content"><a href="https://web.telegram.org/z/">Telegram</a></div>
                     </div>
                     <div class="boxes">
-                        <div class="cat-name">Ent</div>
-                        <div class="content">YouTube</div>
-                        <div class="content">Netflix</div>
-                        <div class="content">Disney+</div>
-                        <div class="content">PrimeVideo</div>
-                        <div class="content">PlayDede</div>
+                        <div class="content"><a href="https://www.youtube.com/">YouTube</a></div>
+                        <div class="content"><a href="https://www.netflix.com/">Netflix</a></div>
+                        <div class="content"><a href="https://www.disneyplus.com/">Disney+</a></div>
+                        <div class="content"><a href="https://www.primevideo.com/">PrimeVideo</a></div>
+                        <div class="content"><a href="https://playdede.com/">PlayDede</a></div>
                     </div>
                     <div class="boxes">
-                        <div class="cat-name">Other</div>
+                        <div class="content"><a href="https://color.adobe.com/es/create/color-wheel">Adobe Color</a></div>
+                        <div class="content"><a href="https://www.photopea.com/">Photopea</a></div>
+                        <div class="content"><a href="https://heroicons.com/">Heroicons</a></div>
+                        <div class="content"><a href="https://fontawesome.com/">Font Awesome</a></div>
+                        <div class="content"><a href="https://css.gg/">CSS.GG</a></div>
                     </div>
                 </div>
             </div>
