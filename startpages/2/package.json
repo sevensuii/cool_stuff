@@ -1,0 +1,25 @@
+{
+  "name": "startpage2",
+  "version": "1.0.0",
+  "description": "Startpage for my everyday routine",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevensuii/cool_stuff.git"
+  },
+  "keywords": [
+    "startpage"
+  ],
+  "author": "Severyn Dorosh Yefimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevensuii/cool_stuff/issues"
+  },
+  "homepage": "https://github.com/sevensuii/cool_stuff#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.14"
+  }
+}
